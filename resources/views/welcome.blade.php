@@ -1,1 +1,1 @@
-Hello {{ env('DOTENV_KEY') }}.
+Hello {{ env('HELLO') }}.
