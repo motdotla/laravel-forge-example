@@ -1,8 +1,5 @@
 <?php
 
-// Load phpdotenv-vault
-(DotenvVault\DotenvVault::createImmutable(__DIR__.'/../'))->load();
-
 /*
 |--------------------------------------------------------------------------
 | Create The Application
@@ -54,5 +51,8 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
+
+// Load phpdotenv-vault
+(DotenvVault\DotenvVault::createImmutable(__DIR__.'/../'))->load();
 
 return $app;
